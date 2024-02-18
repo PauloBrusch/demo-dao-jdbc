@@ -24,6 +24,11 @@ public class Program {
         List<Seller> sellers = sellerDao.findByDepartment(department);
         sellers.forEach(System.out::println);
 
+        System.out.println();
+
+        sellers = sellerDao.findAll();
+        sellers.forEach(System.out::println);
+
     }
 
 }
