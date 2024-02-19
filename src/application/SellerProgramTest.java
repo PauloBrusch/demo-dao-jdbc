@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class Program {
+public class SellerProgramTest {
 
     public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class Program {
 
         System.out.println("=== Update ===");
         seller = sellerDao.findById(1);
-        seller.setName("Martha Wayne");
+        seller.setName("Martha");
         sellerDao.update(seller);
         System.out.println("update Completed");
 
